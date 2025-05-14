@@ -213,7 +213,7 @@ var assemblies = [
   {
     "name": "EcommerceApp.Api",
     "classes": [
-      { "name": "EcommerceApp.Api.Controllers.CartController", "rp": "EcommerceApp.Api_CartController.html", "cl": 19, "ucl": 0, "cal": 19, "tl": 38, "cb": 2, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "EcommerceApp.Api.Controllers.CartController", "rp": "EcommerceApp.Api_CartController.html", "cl": 24, "ucl": 0, "cal": 24, "tl": 45, "cb": 2, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Program", "rp": "EcommerceApp.Api_Program.html", "cl": 0, "ucl": 11, "cal": 11, "tl": 18, "cb": 0, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
     ]},
 ];
