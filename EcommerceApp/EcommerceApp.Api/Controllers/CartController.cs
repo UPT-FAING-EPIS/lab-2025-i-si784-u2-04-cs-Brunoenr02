@@ -3,6 +3,10 @@ using EcommerceApp.Api.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EcommerceApp.Api.Controllers;
+
+/// <summary>
+/// Controlador para manejar el proceso de checkout del carrito
+/// </summary>
 [ApiController]
 [Route("[controller]")]
 public class CartController
@@ -12,12 +16,14 @@ public class CartController
     private readonly IShipmentService _shipmentService;
     private readonly IDiscountService _discountService;
     
+    /// <summary>
+    /// Constructor del controlador
+    /// </summary>
     public CartController(
       ICartService cartService,
       IPaymentService paymentService,
       IShipmentService shipmentService,
-      IDiscountService discountService
-    ) 
+      IDiscountService discountService) 
     {
       _cartService = cartService;
       _paymentService = paymentService;
@@ -25,6 +31,12 @@ public class CartController
       _discountService = discountService;
     }
 
+    /// <summary>
+    /// Procesa el checkout del carrito
+    /// </summary>
+    /// <param name="card">Datos de la tarjeta de crédito</param>
+    /// <param name="addressInfo">Información de envío</param>
+    /// <returns>Resultado del proceso ("charged" o "not charged")</returns>
     [HttpPost]
     public string CheckOut(ICard card, IAddressInfo addressInfo) 
     {
@@ -41,5 +53,5 @@ public class CartController
         else {
             return "not charged";
         }
-    }    
+    }
 }

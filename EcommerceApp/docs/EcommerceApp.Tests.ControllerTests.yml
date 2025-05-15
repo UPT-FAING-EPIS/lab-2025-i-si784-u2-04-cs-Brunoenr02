@@ -1,0 +1,529 @@
+### YamlMime:ManagedReference
+items:
+- uid: EcommerceApp.Tests.ControllerTests
+  commentId: T:EcommerceApp.Tests.ControllerTests
+  id: ControllerTests
+  parent: EcommerceApp.Tests
+  children:
+  - EcommerceApp.Tests.ControllerTests.Setup
+  - EcommerceApp.Tests.ControllerTests.ShouldHandleDifferentScenarios(System.Double,System.Double,System.Double,System.Boolean,System.String)
+  - EcommerceApp.Tests.ControllerTests.ShouldReturnCharged
+  - EcommerceApp.Tests.ControllerTests.ShouldReturnNotCharged
+  langs:
+  - csharp
+  - vb
+  name: ControllerTests
+  nameWithType: ControllerTests
+  fullName: EcommerceApp.Tests.ControllerTests
+  type: Class
+  source:
+    remote:
+      path: EcommerceApp/EcommerceApp.Tests/CartControllerTests.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-04-cs-Brunoenr02.git
+    id: ControllerTests
+    path: EcommerceApp.Tests/CartControllerTests.cs
+    startLine: 6
+  assemblies:
+  - EcommerceApp.Tests
+  namespace: EcommerceApp.Tests
+  syntax:
+    content: public class ControllerTests
+    content.vb: Public Class ControllerTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: EcommerceApp.Tests.ControllerTests.Setup
+  commentId: M:EcommerceApp.Tests.ControllerTests.Setup
+  id: Setup
+  parent: EcommerceApp.Tests.ControllerTests
+  langs:
+  - csharp
+  - vb
+  name: Setup()
+  nameWithType: ControllerTests.Setup()
+  fullName: EcommerceApp.Tests.ControllerTests.Setup()
+  type: Method
+  source:
+    remote:
+      path: EcommerceApp/EcommerceApp.Tests/CartControllerTests.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-04-cs-Brunoenr02.git
+    id: Setup
+    path: EcommerceApp.Tests/CartControllerTests.cs
+    startLine: 17
+  assemblies:
+  - EcommerceApp.Tests
+  namespace: EcommerceApp.Tests
+  syntax:
+    content: >-
+      [SetUp]
+
+      public void Setup()
+    content.vb: >-
+      <SetUp>
+
+      Public Sub Setup()
+  overload: EcommerceApp.Tests.ControllerTests.Setup*
+  attributes:
+  - type: NUnit.Framework.SetUpAttribute
+    ctor: NUnit.Framework.SetUpAttribute.#ctor
+    arguments: []
+- uid: EcommerceApp.Tests.ControllerTests.ShouldReturnCharged
+  commentId: M:EcommerceApp.Tests.ControllerTests.ShouldReturnCharged
+  id: ShouldReturnCharged
+  parent: EcommerceApp.Tests.ControllerTests
+  langs:
+  - csharp
+  - vb
+  name: ShouldReturnCharged()
+  nameWithType: ControllerTests.ShouldReturnCharged()
+  fullName: EcommerceApp.Tests.ControllerTests.ShouldReturnCharged()
+  type: Method
+  source:
+    remote:
+      path: EcommerceApp/EcommerceApp.Tests/CartControllerTests.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-04-cs-Brunoenr02.git
+    id: ShouldReturnCharged
+    path: EcommerceApp.Tests/CartControllerTests.cs
+    startLine: 47
+  assemblies:
+  - EcommerceApp.Tests
+  namespace: EcommerceApp.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void ShouldReturnCharged()
+    content.vb: >-
+      <Test>
+
+      Public Sub ShouldReturnCharged()
+  overload: EcommerceApp.Tests.ControllerTests.ShouldReturnCharged*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: EcommerceApp.Tests.ControllerTests.ShouldReturnNotCharged
+  commentId: M:EcommerceApp.Tests.ControllerTests.ShouldReturnNotCharged
+  id: ShouldReturnNotCharged
+  parent: EcommerceApp.Tests.ControllerTests
+  langs:
+  - csharp
+  - vb
+  name: ShouldReturnNotCharged()
+  nameWithType: ControllerTests.ShouldReturnNotCharged()
+  fullName: EcommerceApp.Tests.ControllerTests.ShouldReturnNotCharged()
+  type: Method
+  source:
+    remote:
+      path: EcommerceApp/EcommerceApp.Tests/CartControllerTests.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-04-cs-Brunoenr02.git
+    id: ShouldReturnNotCharged
+    path: EcommerceApp.Tests/CartControllerTests.cs
+    startLine: 62
+  assemblies:
+  - EcommerceApp.Tests
+  namespace: EcommerceApp.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void ShouldReturnNotCharged()
+    content.vb: >-
+      <Test>
+
+      Public Sub ShouldReturnNotCharged()
+  overload: EcommerceApp.Tests.ControllerTests.ShouldReturnNotCharged*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: EcommerceApp.Tests.ControllerTests.ShouldHandleDifferentScenarios(System.Double,System.Double,System.Double,System.Boolean,System.String)
+  commentId: M:EcommerceApp.Tests.ControllerTests.ShouldHandleDifferentScenarios(System.Double,System.Double,System.Double,System.Boolean,System.String)
+  id: ShouldHandleDifferentScenarios(System.Double,System.Double,System.Double,System.Boolean,System.String)
+  parent: EcommerceApp.Tests.ControllerTests
+  langs:
+  - csharp
+  - vb
+  name: ShouldHandleDifferentScenarios(double, double, double, bool, string)
+  nameWithType: ControllerTests.ShouldHandleDifferentScenarios(double, double, double, bool, string)
+  fullName: EcommerceApp.Tests.ControllerTests.ShouldHandleDifferentScenarios(double, double, double, bool, string)
+  type: Method
+  source:
+    remote:
+      path: EcommerceApp/EcommerceApp.Tests/CartControllerTests.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-04-cs-Brunoenr02.git
+    id: ShouldHandleDifferentScenarios
+    path: EcommerceApp.Tests/CartControllerTests.cs
+    startLine: 77
+  assemblies:
+  - EcommerceApp.Tests
+  namespace: EcommerceApp.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      [TestCase(new object?[] { 10, 2, 8, true, "charged with $2 discount" })]
+
+      [TestCase(new object?[] { 15, 0, 15, true, "charged with $0 discount" })]
+
+      [TestCase(new object?[] { 20, 5, 15, false, "not charged" })]
+
+      public void ShouldHandleDifferentScenarios(double total, double discount, double finalAmount, bool chargeResult, string expectedResult)
+    parameters:
+    - id: total
+      type: System.Double
+    - id: discount
+      type: System.Double
+    - id: finalAmount
+      type: System.Double
+    - id: chargeResult
+      type: System.Boolean
+    - id: expectedResult
+      type: System.String
+    content.vb: >-
+      <Test>
+
+      <TestCase(New Object() { 10, 2, 8, True, "charged with $2 discount" })>
+
+      <TestCase(New Object() { 15, 0, 15, True, "charged with $0 discount" })>
+
+      <TestCase(New Object() { 20, 5, 15, False, "not charged" })>
+
+      Public Sub ShouldHandleDifferentScenarios(total As Double, discount As Double, finalAmount As Double, chargeResult As Boolean, expectedResult As String)
+  overload: EcommerceApp.Tests.ControllerTests.ShouldHandleDifferentScenarios*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ControllerTests.ShouldHandleDifferentScenarios(Double, Double, Double, Boolean, String)
+  fullName.vb: EcommerceApp.Tests.ControllerTests.ShouldHandleDifferentScenarios(Double, Double, Double, Boolean, String)
+  name.vb: ShouldHandleDifferentScenarios(Double, Double, Double, Boolean, String)
+references:
+- uid: EcommerceApp.Tests
+  commentId: N:EcommerceApp.Tests
+  href: EcommerceApp.html
+  name: EcommerceApp.Tests
+  nameWithType: EcommerceApp.Tests
+  fullName: EcommerceApp.Tests
+  spec.csharp:
+  - uid: EcommerceApp
+    name: EcommerceApp
+    href: EcommerceApp.html
+  - name: .
+  - uid: EcommerceApp.Tests
+    name: Tests
+    href: EcommerceApp.Tests.html
+  spec.vb:
+  - uid: EcommerceApp
+    name: EcommerceApp
+    href: EcommerceApp.html
+  - name: .
+  - uid: EcommerceApp.Tests
+    name: Tests
+    href: EcommerceApp.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EcommerceApp.Tests.ControllerTests.Setup*
+  commentId: Overload:EcommerceApp.Tests.ControllerTests.Setup
+  href: EcommerceApp.Tests.ControllerTests.html#EcommerceApp_Tests_ControllerTests_Setup
+  name: Setup
+  nameWithType: ControllerTests.Setup
+  fullName: EcommerceApp.Tests.ControllerTests.Setup
+- uid: EcommerceApp.Tests.ControllerTests.ShouldReturnCharged*
+  commentId: Overload:EcommerceApp.Tests.ControllerTests.ShouldReturnCharged
+  href: EcommerceApp.Tests.ControllerTests.html#EcommerceApp_Tests_ControllerTests_ShouldReturnCharged
+  name: ShouldReturnCharged
+  nameWithType: ControllerTests.ShouldReturnCharged
+  fullName: EcommerceApp.Tests.ControllerTests.ShouldReturnCharged
+- uid: EcommerceApp.Tests.ControllerTests.ShouldReturnNotCharged*
+  commentId: Overload:EcommerceApp.Tests.ControllerTests.ShouldReturnNotCharged
+  href: EcommerceApp.Tests.ControllerTests.html#EcommerceApp_Tests_ControllerTests_ShouldReturnNotCharged
+  name: ShouldReturnNotCharged
+  nameWithType: ControllerTests.ShouldReturnNotCharged
+  fullName: EcommerceApp.Tests.ControllerTests.ShouldReturnNotCharged
+- uid: EcommerceApp.Tests.ControllerTests.ShouldHandleDifferentScenarios*
+  commentId: Overload:EcommerceApp.Tests.ControllerTests.ShouldHandleDifferentScenarios
+  href: EcommerceApp.Tests.ControllerTests.html#EcommerceApp_Tests_ControllerTests_ShouldHandleDifferentScenarios_System_Double_System_Double_System_Double_System_Boolean_System_String_
+  name: ShouldHandleDifferentScenarios
+  nameWithType: ControllerTests.ShouldHandleDifferentScenarios
+  fullName: EcommerceApp.Tests.ControllerTests.ShouldHandleDifferentScenarios
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

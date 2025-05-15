@@ -1,0 +1,262 @@
+### YamlMime:ManagedReference
+items:
+- uid: EcommerceApp.Api.Services.IDiscountService
+  commentId: T:EcommerceApp.Api.Services.IDiscountService
+  id: IDiscountService
+  parent: EcommerceApp.Api.Services
+  children:
+  - EcommerceApp.Api.Services.IDiscountService.ApplyDiscount(System.Collections.Generic.IEnumerable{EcommerceApp.Api.Models.ICartItem},EcommerceApp.Api.Models.ICard)
+  langs:
+  - csharp
+  - vb
+  name: IDiscountService
+  nameWithType: IDiscountService
+  fullName: EcommerceApp.Api.Services.IDiscountService
+  type: Interface
+  source:
+    remote:
+      path: EcommerceApp/EcommerceApp.Api/Services/IDiscountService.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-04-cs-Brunoenr02.git
+    id: IDiscountService
+    path: EcommerceApp.Api/Services/IDiscountService.cs
+    startLine: 7
+  assemblies:
+  - EcommerceApp.Api
+  namespace: EcommerceApp.Api.Services
+  summary: Servicio para calcular descuentos
+  example: []
+  syntax:
+    content: public interface IDiscountService
+    content.vb: Public Interface IDiscountService
+- uid: EcommerceApp.Api.Services.IDiscountService.ApplyDiscount(System.Collections.Generic.IEnumerable{EcommerceApp.Api.Models.ICartItem},EcommerceApp.Api.Models.ICard)
+  commentId: M:EcommerceApp.Api.Services.IDiscountService.ApplyDiscount(System.Collections.Generic.IEnumerable{EcommerceApp.Api.Models.ICartItem},EcommerceApp.Api.Models.ICard)
+  id: ApplyDiscount(System.Collections.Generic.IEnumerable{EcommerceApp.Api.Models.ICartItem},EcommerceApp.Api.Models.ICard)
+  parent: EcommerceApp.Api.Services.IDiscountService
+  langs:
+  - csharp
+  - vb
+  name: ApplyDiscount(IEnumerable<ICartItem>, ICard)
+  nameWithType: IDiscountService.ApplyDiscount(IEnumerable<ICartItem>, ICard)
+  fullName: EcommerceApp.Api.Services.IDiscountService.ApplyDiscount(System.Collections.Generic.IEnumerable<EcommerceApp.Api.Models.ICartItem>, EcommerceApp.Api.Models.ICard)
+  type: Method
+  source:
+    remote:
+      path: EcommerceApp/EcommerceApp.Api/Services/IDiscountService.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-04-cs-Brunoenr02.git
+    id: ApplyDiscount
+    path: EcommerceApp.Api/Services/IDiscountService.cs
+    startLine: 15
+  assemblies:
+  - EcommerceApp.Api
+  namespace: EcommerceApp.Api.Services
+  summary: Calcula el descuento aplicable a una compra
+  example: []
+  syntax:
+    content: double ApplyDiscount(IEnumerable<ICartItem> items, ICard card)
+    parameters:
+    - id: items
+      type: System.Collections.Generic.IEnumerable{EcommerceApp.Api.Models.ICartItem}
+      description: Items en el carrito
+    - id: card
+      type: EcommerceApp.Api.Models.ICard
+      description: Tarjeta usada (para descuentos especiales)
+    return:
+      type: System.Double
+      description: Monto del descuento
+    content.vb: Function ApplyDiscount(items As IEnumerable(Of ICartItem), card As ICard) As Double
+  overload: EcommerceApp.Api.Services.IDiscountService.ApplyDiscount*
+  nameWithType.vb: IDiscountService.ApplyDiscount(IEnumerable(Of ICartItem), ICard)
+  fullName.vb: EcommerceApp.Api.Services.IDiscountService.ApplyDiscount(System.Collections.Generic.IEnumerable(Of EcommerceApp.Api.Models.ICartItem), EcommerceApp.Api.Models.ICard)
+  name.vb: ApplyDiscount(IEnumerable(Of ICartItem), ICard)
+references:
+- uid: EcommerceApp.Api.Services
+  commentId: N:EcommerceApp.Api.Services
+  href: EcommerceApp.html
+  name: EcommerceApp.Api.Services
+  nameWithType: EcommerceApp.Api.Services
+  fullName: EcommerceApp.Api.Services
+  spec.csharp:
+  - uid: EcommerceApp
+    name: EcommerceApp
+    href: EcommerceApp.html
+  - name: .
+  - uid: EcommerceApp.Api
+    name: Api
+    href: EcommerceApp.Api.html
+  - name: .
+  - uid: EcommerceApp.Api.Services
+    name: Services
+    href: EcommerceApp.Api.Services.html
+  spec.vb:
+  - uid: EcommerceApp
+    name: EcommerceApp
+    href: EcommerceApp.html
+  - name: .
+  - uid: EcommerceApp.Api
+    name: Api
+    href: EcommerceApp.Api.html
+  - name: .
+  - uid: EcommerceApp.Api.Services
+    name: Services
+    href: EcommerceApp.Api.Services.html
+- uid: EcommerceApp.Api.Services.IDiscountService.ApplyDiscount*
+  commentId: Overload:EcommerceApp.Api.Services.IDiscountService.ApplyDiscount
+  href: EcommerceApp.Api.Services.IDiscountService.html#EcommerceApp_Api_Services_IDiscountService_ApplyDiscount_System_Collections_Generic_IEnumerable_EcommerceApp_Api_Models_ICartItem__EcommerceApp_Api_Models_ICard_
+  name: ApplyDiscount
+  nameWithType: IDiscountService.ApplyDiscount
+  fullName: EcommerceApp.Api.Services.IDiscountService.ApplyDiscount
+- uid: System.Collections.Generic.IEnumerable{EcommerceApp.Api.Models.ICartItem}
+  commentId: T:System.Collections.Generic.IEnumerable{EcommerceApp.Api.Models.ICartItem}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ICartItem>
+  nameWithType: IEnumerable<ICartItem>
+  fullName: System.Collections.Generic.IEnumerable<EcommerceApp.Api.Models.ICartItem>
+  nameWithType.vb: IEnumerable(Of ICartItem)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of EcommerceApp.Api.Models.ICartItem)
+  name.vb: IEnumerable(Of ICartItem)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: EcommerceApp.Api.Models.ICartItem
+    name: ICartItem
+    href: EcommerceApp.Api.Models.ICartItem.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EcommerceApp.Api.Models.ICartItem
+    name: ICartItem
+    href: EcommerceApp.Api.Models.ICartItem.html
+  - name: )
+- uid: EcommerceApp.Api.Models.ICard
+  commentId: T:EcommerceApp.Api.Models.ICard
+  parent: EcommerceApp.Api.Models
+  href: EcommerceApp.Api.Models.ICard.html
+  name: ICard
+  nameWithType: ICard
+  fullName: EcommerceApp.Api.Models.ICard
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: EcommerceApp.Api.Models
+  commentId: N:EcommerceApp.Api.Models
+  href: EcommerceApp.html
+  name: EcommerceApp.Api.Models
+  nameWithType: EcommerceApp.Api.Models
+  fullName: EcommerceApp.Api.Models
+  spec.csharp:
+  - uid: EcommerceApp
+    name: EcommerceApp
+    href: EcommerceApp.html
+  - name: .
+  - uid: EcommerceApp.Api
+    name: Api
+    href: EcommerceApp.Api.html
+  - name: .
+  - uid: EcommerceApp.Api.Models
+    name: Models
+    href: EcommerceApp.Api.Models.html
+  spec.vb:
+  - uid: EcommerceApp
+    name: EcommerceApp
+    href: EcommerceApp.html
+  - name: .
+  - uid: EcommerceApp.Api
+    name: Api
+    href: EcommerceApp.Api.html
+  - name: .
+  - uid: EcommerceApp.Api.Models
+    name: Models
+    href: EcommerceApp.Api.Models.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

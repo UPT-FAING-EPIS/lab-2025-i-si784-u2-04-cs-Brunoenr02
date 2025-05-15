@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: EcommerceApp.Tests
+  commentId: N:EcommerceApp.Tests
+  id: EcommerceApp.Tests
+  children:
+  - EcommerceApp.Tests.ControllerTests
+  langs:
+  - csharp
+  - vb
+  name: EcommerceApp.Tests
+  nameWithType: EcommerceApp.Tests
+  fullName: EcommerceApp.Tests
+  type: Namespace
+  assemblies:
+  - EcommerceApp.Tests
+references:
+- uid: EcommerceApp.Tests.ControllerTests
+  commentId: T:EcommerceApp.Tests.ControllerTests
+  href: EcommerceApp.Tests.ControllerTests.html
+  name: ControllerTests
+  nameWithType: ControllerTests
+  fullName: EcommerceApp.Tests.ControllerTests
