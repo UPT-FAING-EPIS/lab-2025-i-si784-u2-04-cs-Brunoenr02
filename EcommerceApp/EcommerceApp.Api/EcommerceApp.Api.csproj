@@ -7,7 +7,6 @@
     <Nullable>enable</Nullable>
     <Authors>Brunoenr02</Authors>
     <ImplicitUsings>enable</ImplicitUsings>
-    <PackageOutputPath>./nupkg</PackageOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
