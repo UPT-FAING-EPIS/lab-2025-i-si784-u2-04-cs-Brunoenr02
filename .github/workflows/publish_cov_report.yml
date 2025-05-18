@@ -1,0 +1,51 @@
+name: Actividad04 - Pruebas unitarias
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout código
+      uses: actions/checkout@v3
+
+    - name: Instalar .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0
+
+    - name: Restaurar dependencias
+      run: |
+        cd EcommerceApp
+        dotnet restore
+
+    - name: Ejecutar pruebas y generar cobertura
+      run: |
+        dotnet test EcommerceApp/EcommerceApp.Tests/EcommerceApp.Tests.csproj \
+          --collect:"XPlat Code Coverage" \
+          --results-directory coverage \
+          --logger trx
+
+    - name: Verificar archivos generados (debug)
+      run: ls -R coverage
+
+    - name: Instalar ReportGenerator
+      run: dotnet tool install -g dotnet-reportgenerator-globaltool
+
+    - name: Generar reporte de cobertura
+      run: |
+        reportgenerator \
+          -reports:coverage/**/coverage.cobertura.xml \
+          -targetdir:coverage-report \
+          -reporttypes:Html
+
+    - name: Publicar en GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: coverage-report
