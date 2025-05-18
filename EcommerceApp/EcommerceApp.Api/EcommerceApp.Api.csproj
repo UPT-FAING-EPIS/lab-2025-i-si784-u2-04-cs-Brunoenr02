@@ -1,9 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
+    <PackageId>EcommerceApp</PackageId>
     <TargetFramework>net8.0</TargetFramework>
+    <Version>20.2307.7472</Version>
     <Nullable>enable</Nullable>
+    <Authors>Brunoenr02</Authors>
     <ImplicitUsings>enable</ImplicitUsings>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
