@@ -22,7 +22,6 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Extract version from tag
-        id: version
         run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_ENV
 
       - name: Set version in .csproj
@@ -37,8 +36,14 @@ jobs:
       - name: Build the project
         run: dotnet build EcommerceApp/EcommerceApp.Api/EcommerceApp.Api.csproj --configuration Release
 
+      - name: Create nupkg directory
+        run: mkdir -p ./nupkg
+
       - name: Pack the NuGet package
         run: dotnet pack EcommerceApp/EcommerceApp.Api/EcommerceApp.Api.csproj --configuration Release --output ./nupkg
+
+      - name: Verify .nupkg file exists
+        run: ls -lh ./nupkg/*.nupkg
 
       - name: Publish package to GitHub Packages
         run: dotnet nuget push "./nupkg/*.nupkg" --source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" --api-key ${{ secrets.GITHUB_TOKEN }}
