@@ -1,3 +1,5 @@
+using System;
+
 namespace EcommerceApp.Api.Models;
 
 /// <summary>
