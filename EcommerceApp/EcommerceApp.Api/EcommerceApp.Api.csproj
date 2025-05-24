@@ -8,6 +8,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>1591</NoWarn>
     <Description>Paquete NuGet EcommerceApp</Description>
+    <IsPackable>true</IsPackable>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-04-cs-Brunoenr02</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -18,5 +19,5 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.14" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
-  
+
 </Project>
