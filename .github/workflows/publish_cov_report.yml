@@ -19,6 +19,9 @@ jobs:
       with:
         dotnet-version: 8.0
 
+    - name: Limpiar caché de NuGet
+      run: dotnet nuget locals all --clear
+      
     - name: Restaurar dependencias
       run: |
         cd EcommerceApp
