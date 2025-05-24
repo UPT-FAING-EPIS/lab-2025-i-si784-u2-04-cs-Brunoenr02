@@ -1,4 +1,4 @@
-name: Actividad04 - Pruebas unitarias
+name: Actividad04 - Publish Coverage Report
 
 on:
   push:
@@ -7,49 +7,62 @@ on:
     branches: [ main ]
 
 jobs:
-  coverage:
+  build-test-coverage:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout código
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Instalar .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 8.0
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
 
-    - name: Limpiar caché de NuGet
-      run: dotnet nuget locals all --clear
+      - name: Restore dependencies
+        run: dotnet restore
 
-    - name: Restaurar dependencias
-      run: |
-        cd EcommerceApp
-        dotnet restore
+      - name: Build
+        run: dotnet build --no-restore --configuration Release
 
-    - name: Ejecutar pruebas y generar cobertura
-      run: |
-        dotnet test EcommerceApp/EcommerceApp.Tests/EcommerceApp.Tests.csproj \
-          --collect:"XPlat Code Coverage" \
-          --results-directory coverage \
-          --logger trx
+      - name: Test and collect coverage
+        run: |
+          dotnet test EcommerceApp/EcommerceApp.Tests/EcommerceApp.Tests.csproj \
+            --collect:"XPlat Code Coverage" \
+            --results-directory coverage \
+            --logger trx
 
-    - name: Verificar archivos generados (debug)
-      run: ls -R coverage
+      - name: Install ReportGenerator
+        run: dotnet tool install -g dotnet-reportgenerator-globaltool
 
-    - name: Instalar ReportGenerator
-      run: dotnet tool install -g dotnet-reportgenerator-globaltool
+      - name: Generate coverage report
+        run: |
+          reportgenerator \
+            -reports:coverage/**/coverage.cobertura.xml \
+            -targetdir:EcommerceApp/Cobertura \
+            -reporttypes:Html
+        env:
+          PATH: $PATH:/home/runner/.dotnet/tools
 
-    - name: Generar reporte de cobertura
-      run: |
-        reportgenerator \
-          -reports:coverage/**/coverage.cobertura.xml \
-          -targetdir:coverage-report \
-          -reporttypes:Html
+      - name: Upload coverage report artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: cobertura-report
+          path: EcommerceApp/Cobertura
 
-    - name: Publicar en GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: coverage-report
+  deploy:
+    needs: build-test-coverage
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: cobertura-report
+          path: ./Cobertura
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./Cobertura
         keep_files: true
