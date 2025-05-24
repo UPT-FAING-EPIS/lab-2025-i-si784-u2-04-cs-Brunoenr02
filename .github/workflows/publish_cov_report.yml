@@ -29,7 +29,7 @@ jobs:
 
     - name: Ejecutar pruebas y generar cobertura
       run: |
-        dotnet test EcommerceApp\EcommerceApp.Tests\EcommerceApp.Tests.csproj
+        dotnet test EcommerceApp/EcommerceApp.Tests/EcommerceApp.Tests.csproj \
           --collect:"XPlat Code Coverage" \
           --results-directory coverage \
           --logger trx
