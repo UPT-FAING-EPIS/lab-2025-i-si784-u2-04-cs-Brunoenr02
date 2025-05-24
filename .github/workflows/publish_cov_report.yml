@@ -40,6 +40,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./Bank/Cobertura
+          publish_dir: ./EcommerceApp/EcommerceApp.sln
           destination_dir: coverage
           keep_files: true
