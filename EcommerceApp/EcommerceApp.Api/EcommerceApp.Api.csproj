@@ -1,12 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <PackageId>EcommerceApp</PackageId>
+    <PackageId>EcommerceApp.Brunoenr02</PackageId>
     <TargetFramework>net8.0</TargetFramework>
     <Version>20.2307.7472</Version>
     <Authors>Brunoenr02</Authors>
-    <Description>Paquete NuGet del proyecto EcommerceApp</Description>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <Description>Paquete NuGet EcommerceApp</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-04-cs-Brunoenr02</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-04-cs-Brunoenr02</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
